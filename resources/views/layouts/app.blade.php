@@ -12,6 +12,7 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
@@ -30,6 +31,7 @@
             <!-- Page Content -->
             <main>
                 {{ $slot }}
+                @include('flash::message')
             </main>
         </div>
     </body>
